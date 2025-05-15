@@ -1,0 +1,101 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuestas</title>
+    <link rel="stylesheet" href="styles1.css">
+</head> 
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpeg" alt="">
+        </div>
+        <h1>-- FORMULA 1 --</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="Pilotos.html">Pilotos</a></li>
+                <li><a href="Apuestas.html">Apuestas</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h2>Bienvenido a la página de Apuestas de F1 Racing </h2>
+    <div>Fecha: <span id="fecha"></span></div>
+
+    <div class="container">
+        <div class="panel">
+            <h3>Registrar Nuevo Auto F1</h3>
+            <div class="input-group">
+                <input type="text" id="modeloMotor" placeholder="Modelo del Motor">
+                <input type="number" id="numeroSerie" placeholder="Numero de Serie">
+                <button onclick="agregarAuto()"> + Agregar</button>
+            </div>
+            <div id="listaAutos"></div>
+
+            <div class="card">
+                <span class="nombre">BMW S70/2 (McLaren F1)</span>
+                <span class="membresia"> - 88 - </span>
+                <div class="actions">
+
+                    <button title="Editar">📝</button>
+                    <button title="Eliminar">🗑️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="panel">
+            <h3>Programar Nueva Apuesta</h3>
+            <div class="input-group">
+                <input type="text" id="nombreApuesta" placeholder="Nombre del auto al que apostar">
+                <input type="number" id="cantidadDinero" placeholder="Cantidad a apostar">
+                <button onclick="agregarApuesta()"> + Agregar</button>
+            </div>
+            <div id="listaApuestas"></div>
+
+
+            <div class="card">
+                <span class="apuestas">Carrera n° 12 / con 8 Vueltas</span>
+                <span class="monto"> 500.000 USD</span>
+                <span class="estado"> Terminado</span>
+                <div class="actions">
+                    <button title="Editar">📝</button>
+                    <button title="Eliminar">🗑️</button>
+                    <button title="Cambiar Estado">💱</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="container">
+        <div class="panel">
+            <h3>Metodo de Pago</h3>
+            <div class="input-group">
+                <input type="text" id="nombreTarjeta" placeholder="Nombre de la Tarjeta">
+                <input type="text" id="bancoTarjeta" placeholder="Tipo de Banco">
+                <input type="number" id="numeroTarjeta" placeholder="Numero de Tarjeta">
+                <button onclick="agregarPago()"> + Agregar</button>
+            </div>
+            <div id="listaPagos"></div>
+
+            <div class="card">
+                <span class="nombre">Visa</span>
+                <span class="banco"> BBVA </span>
+                <span class="num"> - 1234 - </span>
+                <div class="actions">
+
+                    <button title="Editar">📝</button>
+                    <button title="Eliminar">🗑️</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="apuestas.js"></script>
+
+    <footer>@2025 Nicolandia En F1 - Derechos Reservados</footer>
+    
+</body>
+</html>
