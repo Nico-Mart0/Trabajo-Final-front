@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const infoContainer = document.getElementById('infoContainer'); 
 
-    fetch('http://ergast.com/api/f1/drivers.json')
+    fetch("https://ergast.com/api/f1/drivers.json")
 
         .then(response => response.json())
         .then(data => {
